@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tempButton = new Button(this);
         elementList = new ArrayList<Element>();
         control = 0;
+
+        loadElements();
     }
 
     public void loadElements(){
