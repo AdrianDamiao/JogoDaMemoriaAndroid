@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android" />
 
         <Button
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android" />
 
         <Button
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android" />
 
         <Button
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android" />
 
     </LinearLayout>
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android" />
 
         <Button
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android" />
 
         <Button
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android"
             android:drawingCacheQuality="auto" />
 
@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#D21E63"
             android:drawableTop="@drawable/ic_action_android" />
     </LinearLayout>
 </LinearLayout>

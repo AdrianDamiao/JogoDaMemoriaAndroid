@@ -3,6 +3,7 @@ package com.example.jogodamemoria;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -49,6 +50,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         control = 0;
 
         loadElements();
+        handler = new Handler();
+        handler.postDelayed(this, 10000);
+        
     }
 
     public void loadElements(){
@@ -129,11 +133,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View view) {
-
+        
     }
 
     @Override
     public void run() {
+        Drawable top = getResources().getDrawable(R.drawable.ic_action_android);
+        button1.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
+        button2.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
+        button3.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
+        button4.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
+        button5.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
+        button6.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
+        button7.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
+        button8.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
 
+        button1.setText("Android");
+        button2.setText("Android");
+        button3.setText("Android");
+        button4.setText("Android");
+        button5.setText("Android");
+        button6.setText("Android");
+        button7.setText("Android");
+        button8.setText("Android");
+
+        button1.setEnabled(true);
+        button2.setEnabled(true);
+        button3.setEnabled(true);
+        button4.setEnabled(true);
+        button5.setEnabled(true);
+        button6.setEnabled(true);
+        button7.setEnabled(true);
+        button8.setEnabled(true);
     }
 }
