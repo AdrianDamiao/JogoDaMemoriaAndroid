@@ -133,7 +133,49 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View view) {
-        
+        control++;
+        if(control <= 2){
+            if(view == button1){
+                button1.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(0).getImage()), null, null);
+                button1.setText(elementList.get(0).getImageText());
+                MatchCheck(button1.getText().toString(), button1);
+            }
+            else if(view == button2){
+                button2.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(1).getImage()), null, null);
+                button2.setText(elementList.get(1).getImageText());
+                MatchCheck(button2.getText().toString(), button2);
+            }
+            else if(view == button3){
+                button3.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(2).getImage()), null, null);
+                button3.setText(elementList.get(2).getImageText());
+                MatchCheck(button3.getText().toString(), button3);
+            }
+            else if(view == button4){
+                button4.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(3).getImage()), null, null);
+                button4.setText(elementList.get(3).getImageText());
+                MatchCheck(button4.getText().toString(), button4);
+            }
+            else if(view == button5){
+                button5.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(4).getImage()), null, null);
+                button5.setText(elementList.get(4).getImageText());
+                MatchCheck(button5.getText().toString(), button5);
+            }
+            else if(view == button6){
+                button6.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(5).getImage()), null, null);
+                button6.setText(elementList.get(5).getImageText());
+                MatchCheck(button6.getText().toString(), button6);
+            }
+            else if(view == button7){
+                button7.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(6).getImage()), null, null);
+                button7.setText(elementList.get(6).getImageText());
+                MatchCheck(button7.getText().toString(), button7);
+            }
+            else if(view == button8){
+                button8.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(elementList.get(7).getImage()), null, null);
+                button8.setText(elementList.get(7).getImageText());
+                MatchCheck(button8.getText().toString(), button8);
+            }
+        }
     }
 
     @Override
@@ -165,5 +207,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button6.setEnabled(true);
         button7.setEnabled(true);
         button8.setEnabled(true);
+    }
+
+    public void MatchCheck(String text, Button button){
+        if(control == 1){
+            firstClickedButtonText = text;
+            tempButton = button;
+        } else if(control == 2) {
+            if(firstClickedButtonText.compareToIgnoreCase(text)==0){
+                button.setEnabled(false);
+                tempButton.setEnabled(false);
+                control = 0;
+            } else {
+                Handler h = new Handler();
+                h.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Drawable top = getResources().getDrawable(R.drawable.ic_action_android);
+                        button.setCompoundDrawablesRelativeWithIntrinsicBounds(null, top, null, null);
+                        tempButton.setCompoundDrawablesRelativeWithIntrinsicBounds(null, top, null, null);
+                        button.setText("Android");
+                        tempButton.setText("Android");
+                        control = 0;
+                    }
+                }, 1000);
+            }
+        }
     }
 }
